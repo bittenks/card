@@ -1,14 +1,23 @@
-html{
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+
+body, html{
     /* 1rem=10px */
+    height: 100%;
     font-size: 62.5%; 
 }
 
-body{
+body {
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: var(--dark-cyan);
-    background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-image:url(.images/background-body.jpg) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
     overflow: hidden;
     
 }
@@ -46,6 +55,8 @@ body{
 }
 
 .card__body-img {
+    height:106 ;
+    width: 106;
     border: 5px solid #fff;
     border-radius: 50px;
     position: relative;
